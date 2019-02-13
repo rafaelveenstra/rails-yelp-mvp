@@ -1,0 +1,14 @@
+<h1> Edit Restaurant </h1>
+<ul>
+<%= form_for @restaurant do |f| %>
+  <li><%= f.label :name, 'Enter a name' %>
+  <%= f.text_field :name %></li>
+  <li><%= f.label :address, 'Enter an address' %>
+  <%= f.text_field :address %></li>
+  <li><%= f.label :phone_number, 'Enter a phone number' %>
+  <%= f.text_field :phone_number %></li>
+  <li><%= f.label :category, 'Enter a category' %>
+  <%= f.text_field :category %></li>
+  <li><%= f.submit %></li>
+<% end %>
+</ul>
